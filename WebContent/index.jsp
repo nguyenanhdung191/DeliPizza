@@ -7,9 +7,10 @@
     <link rel="stylesheet" type="text/css" href="css/home.css">
     <link rel="stylesheet" type="text/css" href="css/navigation.css">
     <link rel="stylesheet" type="text/css" href="css/homeContent.css">
+    <link href="css/js-image-slider.css" rel="stylesheet" type="text/css" />
+    <script src="script/js-image-slider.js" type="text/javascript"></script>
     <title>Deli Pizza</title>
 	<style type="text/css">
-		
 	</style>
 </head>
 <body>
@@ -34,7 +35,14 @@
 			</ul>
 		</div>
 		<div class="contentContainer">
-			<img src="img/promotion/km1.jpg" />
+			<div id="sliderFrame">
+		        <div id="slider">
+		            <img src="img/promotion/km1.jpg" />
+		            <img src="img/promotion/km2.jpg" />
+		            <img src="img/promotion/km3.png" />
+		            <img src="img/promotion/km4.png" />
+		        </div>
+		    </div>
 		</div>
     </div>
 </body>
