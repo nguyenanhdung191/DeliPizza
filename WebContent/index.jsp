@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Baloo&amp;subset=devanagari,latin-ext,vietnamese" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/home.css">
     <link rel="stylesheet" type="text/css" href="css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="css/homeContent.css">
     <title>Deli Pizza</title>
 	<style type="text/css">
 		
@@ -31,6 +32,9 @@
 		        <li><a href="#">HƯỚNG DẪN</a></li>
 		        <li><a href="#">GIỎ HÀNG</a></li>
 			</ul>
+		</div>
+		<div class="contentContainer">
+			<img src="img/promotion/km1.jpg" />
 		</div>
     </div>
 </body>

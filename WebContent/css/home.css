@@ -12,6 +12,11 @@
 	font-size: 80px;
 }
 
+.contentContainer{
+	width:100%;
+	margin-top: 10px;
+}
+
 body {
 	background-image:url(../img/sb.jpg);
 }
