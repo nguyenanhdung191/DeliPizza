@@ -23,11 +23,11 @@
     	</div>
         <div class="menubarContainer">
 			<ul class="nav">
-				<li><a href="#">TRANG CHỦ</a></li>
+				<li><a href="index.jsp">TRANG CHỦ</a></li>
 				<li>
 					<a href="#">THỰC ĐƠN</a>
 					<ul>
-						<li><a href="#">PIZZA</a></li>
+						<li><a href="ViewProductByType?productTypeID=1">PIZZA</a></li>
 						<li><a href="#">PASTA</a></li>
 						<li><a href="#">CƠM</a></li>
 		                <li><a href="#">THỨC UỐNG</a></li>

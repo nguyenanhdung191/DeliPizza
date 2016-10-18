@@ -7,6 +7,8 @@ import java.io.PrintWriter;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -26,12 +28,10 @@ public class ViewProductByType extends HttpServlet {
 		String SQLCommand = "SELECT * FROM Product ";
 		SQLCommand += "JOIN ProductType "; 
 		SQLCommand += "ON Product.productTypeID = ProductType.productTypeID ";
-		SQLCommand += "WHERE Product.productTypeID = 1";
+		SQLCommand += "WHERE Product.productTypeID = " + request.getParameter("productTypeID");
 		ResultSet rs = pd.getProductByType(SQLCommand);
-		
 		ArrayList<Product> list = new ArrayList<Product>();
 		response.setContentType("text/html; charset=UTF-8");
-		PrintWriter pw = response.getWriter();
 		try {
 			while(rs.next()){
 				Product p = new Product();
@@ -46,6 +46,9 @@ public class ViewProductByType extends HttpServlet {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+		RequestDispatcher rd = getServletContext().getRequestDispatcher("/viewProductByType.jsp");
+		request.setAttribute("products", list);
+		rd.forward(request, response);
 	}
 
 }
