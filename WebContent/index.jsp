@@ -15,7 +15,12 @@
 </head>
 <body>
 	<div class="pageContainer">
-    	<div class="bannerContainer">DELI PIZZA</div>
+    	<div class="bannerContainer">
+    		<div class="logoContainer">DELI PIZZA</div>
+    		<div class="sloganContainer">
+    			<img src="img/delivery.png" />
+    		</div>
+    	</div>
         <div class="menubarContainer">
 			<ul class="nav">
 				<li><a href="#">TRANG CHỦ</a></li>
