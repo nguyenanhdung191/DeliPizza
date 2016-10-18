@@ -1,0 +1,50 @@
+.darkBackground{
+	width: 100%;
+	background-image: url("../img/dark.png");
+	-webkit-box-shadow: 0px 0px 0px 0px rgba(46,74,117,0.52);
+	-moz-box-shadow: 0px 0px 0px 0px rgba(46,74,117,0.52);
+	box-shadow: 0px 0px 0px 0px rgba(46,74,117,0.52);
+	border-radius: 15px 15px 15px 15px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	border: 1px solid #e3e3e3;
+	margin-top: -80px;
+	overflow:hidden;
+}
+
+.ribbonContainer{
+	width: 250px;
+	margin: 0 auto;
+}
+
+.ribbonContainer img{
+	width: 100%;
+	height:auto;
+}
+
+.productListContainer{
+	margin-top: 30px;
+	text-align:center
+}
+.productContainer{
+	width:300px;
+	height:300px;
+	float:left;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.productImage{
+	width:100%;
+	height:220px;
+}
+.productImage img{
+	width:250px;
+}
+
+.productName, .productDescription{
+	color:white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 22px;
+}

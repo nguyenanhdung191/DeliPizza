@@ -19,18 +19,23 @@
 }
 
 .sloganContainer{
-	width: 400px;
+	width: 550px;
 	height: 100px;
 	float:left;
 	margin-left: 5px;
+}
+
+.sloganContainer img{
+	width: 550px;
+	height: auto;
 }
 .menubarContainer{
 	margin-top: 5px;
 }
 .contentContainer{
 	width:100%;
-	margin-top: 20px;
-
+	text-align: center;
+	margin-top: 15px;
 }
 
 body {
