@@ -36,7 +36,7 @@
 						<li><a href="ViewProductByType?productTypeID=1">PIZZA</a></li>
 						<li><a href="ViewProductByType?productTypeID=2">MÌ Ý</a></li>
 						<li><a href="ViewProductByType?productTypeID=3">CƠM</a></li>
-		                <li><a href="#">THỨC UỐNG</a></li>
+		                <li><a href="ViewProductByType?productTypeID=4">THỨC UỐNG</a></li>
 					</ul>
 				</li>
 				<li><a href="#">GIỚI THIỆU</a></li>
