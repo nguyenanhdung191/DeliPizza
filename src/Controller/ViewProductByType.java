@@ -3,7 +3,6 @@ package Controller;
 import Model.*;
 import Object.Product;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -38,7 +37,7 @@ public class ViewProductByType extends HttpServlet {
 				p.setProductID(rs.getInt(1));
 				p.setProductName(rs.getString(2));
 				p.setProductPrice(rs.getInt(3));
-				p.setProductType(rs.getString(7));
+				p.setProductTypeID(rs.getInt(4));
 				p.setProductDescription(rs.getString(5));
 				p.setProductImageUrl(rs.getString(6));
 				list.add(p);

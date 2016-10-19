@@ -6,7 +6,7 @@ public class Product {
 	private int productID;
 	private String productName;
 	private int productPrice;
-	private String productType;
+	private int productTypeID;
 	private String productDescription;
 	private String productImageUrl;
 	
@@ -35,12 +35,12 @@ public class Product {
 		this.productPrice = productPrice;
 	}
 
-	public String getProductType() {
-		return productType;
+	public int getProductTypeID() {
+		return productTypeID;
 	}
 
-	public void setProductType(String productType) {
-		this.productType = productType;
+	public void setProductTypeID(int productTypeID) {
+		this.productTypeID = productTypeID;
 	}
 
 	public String getProductDescription() {

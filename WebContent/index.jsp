@@ -3,6 +3,7 @@
 <html>
 <head>
     <meta charset="UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Baloo&amp;subset=devanagari,latin-ext,vietnamese" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/home.css">
     <link rel="stylesheet" type="text/css" href="css/navigation.css">
@@ -33,10 +34,10 @@
 		                <li><a href="ViewProductByType?productTypeID=4">THỨC UỐNG</a></li>
 					</ul>
 				</li>
+				<li><a href="#">HƯỚNG DẪN</a></li>
+				<li><a href="#">GIỎ HÀNG</a></li>
 				<li><a href="#">GIỚI THIỆU</a></li>
-		        <li><a href="#">CỬA HÀNG</a></li>
-		        <li><a href="#">HƯỚNG DẪN</a></li>
-		        <li><a href="#">GIỎ HÀNG</a></li>
+		        <li><a href="#">CỬA HÀNG</a></li>   
 			</ul>
 		</div>
 		<div class="contentContainer">
