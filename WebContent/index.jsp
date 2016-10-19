@@ -28,8 +28,8 @@
 					<a href="#">THỰC ĐƠN</a>
 					<ul>
 						<li><a href="ViewProductByType?productTypeID=1">PIZZA</a></li>
-						<li><a href="#">PASTA</a></li>
-						<li><a href="#">CƠM</a></li>
+						<li><a href="ViewProductByType?productTypeID=2">MÌ Ý</a></li>
+						<li><a href="ViewProductByType?productTypeID=3">CƠM</a></li>
 		                <li><a href="#">THỨC UỐNG</a></li>
 					</ul>
 				</li>

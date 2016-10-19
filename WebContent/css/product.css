@@ -23,7 +23,7 @@
 }
 
 .productListContainer{
-	margin-top: 30px;
+	margin-top: 60px;
 	text-align:center
 }
 .productContainer{
@@ -68,8 +68,8 @@
 }
 
 .productImage img:hover {
-    -webkit-transform: scale(1.8);
-    transform: scale(1.8);
+    -webkit-transform: scale(1.6);
+    transform: scale(1.6);
 }
 
 .seperator{
