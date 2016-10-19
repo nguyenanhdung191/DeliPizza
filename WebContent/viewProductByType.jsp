@@ -54,13 +54,14 @@
 					ArrayList<Product> list = (ArrayList)request.getAttribute("products");
 					for(Product p : list){ %>
 						<div class="productContainer">
-						<div class="productImage"><img src="img/menu/<%= p.getProductImageUrl() %>" /></div>
-						<div class="productName"><%= p.getProductName() %></div>
-						<div class="productDescription"><%= p.getProductDescription() %></div>
-						<div class="productPrice"><%=String.format("%,d", p.getProductPrice())%> VNĐ</div>
-					</div>
-					<%}
-				%>
+							<div class="productImage"><img src="img/menu/<%= p.getProductImageUrl() %>" /></div>
+							<div class="productName"><%= p.getProductName() %></div>
+							<div class="productDescription"><%= p.getProductDescription() %></div>
+							<div class="productPrice"><%=String.format("%,d", p.getProductPrice())%> VNĐ</div>
+							<hr class="seperator"/>
+						</div>
+
+					<%}%>
 
 				</div>
 			</div>
