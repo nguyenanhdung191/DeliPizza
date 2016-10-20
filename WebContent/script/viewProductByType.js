@@ -22,23 +22,35 @@ $("[name=addToCart]").each(function(index, img){
 	$(img).on("click", function(){
 		var productID = $(img).attr("id").split("-")[0];
 		var productName = $("#" + productID + "-productName").text();
+		var productTypeID = $("#" + productID + "-productTypeID").text();
+		if(productTypeID == "1"){
+			var productSizePrice = parseInt($("#" + productID + "-sizeSelection").val().split("-")[1]);
+			var productCrustPrice = parseInt($("#" + productID + "-crustSelection").val().split("-")[1]);
+		}
+		else{
+			var productSizePrice = 0;
+			var productCrustPrice = 0;
+		}
 		var productCrust = $("#" + productID + "-crustSelection option:selected").text();
-		var productCrustPrice = parseInt($("#" + productID + "-crustSelection").val().split("-")[1]);
 		var productSize = $("#" + productID + "-sizeSelection option:selected").text();
-		var productSizePrice = parseInt($("#" + productID + "-sizeSelection").val().split("-")[1]);
 		var productStartingPrice = parseInt($("#" + productID + "-startingPrice").text());
 		var productImage = $("#" + productID + "-productImage").html();
-		debugger;
 		var productPrice = productStartingPrice + productCrustPrice + productSizePrice;
 		if(productCrust == "Chọn vỏ bánh" || productSize == "Chọn kích thước"){
 			alert("Vui lòng chọn vỏ bánh và kích thước bánh");
 			return;
 		}
-		debugger;
 		$(".addToCartLeft").html(productImage);
 		$(".cartProductName").text(productName);
-		$(".cartProductCrust").text("Vỏ bánh: " + productCrust);
-		$(".cartProductSize").text("Kích thước bánh: " + productSize);
+		
+		if(productTypeID == "1"){
+			$(".cartProductCrust").text("Vỏ bánh: " + productCrust);
+			$(".cartProductSize").text("Kích thước bánh: " + productSize);
+		}
+		else{
+			$(".cartProductCrust").text("");
+			$(".cartProductSize").text("");
+		}
 		$(".cartProductPrice").text("Giá: " + format(productPrice) +" VNĐ");
 		$(".cartProductPriceHidden").text(productPrice);
 		$("#quantity").val("1");

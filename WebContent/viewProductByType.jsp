@@ -54,6 +54,7 @@
 					ArrayList<Product> list = (ArrayList)request.getAttribute("products");
 					for(Product p : list){ %>
 						<div class="productContainer">
+							<div class="productTypeID" id="<%=p.getProductID()%>-productTypeID"><%=p.getProductTypeID()%></div>
 							<div class="productStartingPrice" id="<%=p.getProductID()%>-startingPrice"><%= p.getProductPrice()%></div>
 							<div class="productImage" id="<%=p.getProductID()%>-productImage"><img src="img/menu/<%= p.getProductImageUrl() %>" /></div>
 							<div class="productName" id="<%=p.getProductID()%>-productName"><%= p.getProductName() %></div>

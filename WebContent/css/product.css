@@ -67,6 +67,10 @@
 	display: none;
 }
 
+.productTypeID{
+	display: none;
+}
+
 .productImage img {
     transition: -webkit-transform 0.25s ease;
     transition: transform 0.25s ease;
