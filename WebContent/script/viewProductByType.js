@@ -1,23 +1,72 @@
-$("[name*=crustSelection]").each(function(index, element){
+$("[name=crustSelection]").each(function(index, element){
 	$(element).on("change", function(){
-		var productID = $(this).attr("name").split("-")[0];
+		var productID = $(this).attr("id").split("-")[0];
 		var productStartingPrice = testNull($("#" + productID + "-startingPrice").text());
 		var crustPrice = testNull($(this).val().split("-")[1]);
 		var sizePrice = testNull($(this).parent().next().children().eq(0).val().split("-")[1]);
-		console.log(productID + "-" + productStartingPrice + "-" + crustPrice + "-" + sizePrice);
-		$("#" + productID + "-price").text(format(productStartingPrice + crustPrice + sizePrice) + " VNĐ");
+		$("#" + productID + "-productPrice").text(format(productStartingPrice + crustPrice + sizePrice) + " VNĐ");
 	});
 });
 
-$("[name*=sizeSelection]").each(function(index, element){
+$("[name=sizeSelection]").each(function(index, element){
 	$(element).on("change", function(){
-		var productID = $(this).attr("name").split("-")[0];
+		var productID = $(this).attr("id").split("-")[0];
 		var productStartingPrice = parseInt($("#" + productID + "-startingPrice").text());
 		var sizePrice = testNull($(this).val().split("-")[1]);
 		var crustPrice = testNull($(this).parent().prev().children().eq(0).val().split("-")[1]);
-		console.log(productID + "-" + productStartingPrice + "-" + crustPrice + "-" + sizePrice);
-		$("#" + productID + "-price").text(format(productStartingPrice + crustPrice + sizePrice) + " VNĐ");
+		$("#" + productID + "-productPrice").text(format(productStartingPrice + crustPrice + sizePrice) + " VNĐ");
 	});
+});
+
+$("[name=addToCart]").each(function(index, img){
+	$(img).on("click", function(){
+		var productID = $(img).attr("id").split("-")[0];
+		var productName = $("#" + productID + "-productName").text();
+		var productCrust = $("#" + productID + "-crustSelection option:selected").text();
+		var productCrustPrice = parseInt($("#" + productID + "-crustSelection").val().split("-")[1]);
+		var productSize = $("#" + productID + "-sizeSelection option:selected").text();
+		var productSizePrice = parseInt($("#" + productID + "-sizeSelection").val().split("-")[1]);
+		var productStartingPrice = parseInt($("#" + productID + "-startingPrice").text());
+		var productImage = $("#" + productID + "-productImage").html();
+		debugger;
+		var productPrice = productStartingPrice + productCrustPrice + productSizePrice;
+		if(productCrust == "Chọn vỏ bánh" || productSize == "Chọn kích thước"){
+			alert("Vui lòng chọn vỏ bánh và kích thước bánh");
+			return;
+		}
+		debugger;
+		$(".addToCartLeft").html(productImage);
+		$(".cartProductName").text(productName);
+		$(".cartProductCrust").text("Vỏ bánh: " + productCrust);
+		$(".cartProductSize").text("Kích thước bánh: " + productSize);
+		$(".cartProductPrice").text("Giá: " + format(productPrice) +" VNĐ");
+		$(".cartProductPriceHidden").text(productPrice);
+		$("#quantity").val("1");
+		$(".modal").show();
+	});
+});
+
+$(".close").on("click", function(){
+	$(".modal").hide();
+});
+
+$("#minus").on("click", function(){
+	var currentQuantity = parseInt($("#quantity").val());
+	if(currentQuantity == 1){
+		return;
+	}
+	var quantity = currentQuantity - 1;
+	$("#quantity").val(quantity);
+	var price = parseInt($(".cartProductPriceHidden").text()) * quantity;
+	$(".cartProductPrice").text("Giá: " + format(price) + " VNĐ");
+});
+
+$("#plus").on("click", function(){
+	var currentQuantity = parseInt($("#quantity").val());
+	var quantity = currentQuantity + 1;
+	$("#quantity").val(quantity);
+	var price = parseInt($(".cartProductPriceHidden").text()) * quantity;
+	$(".cartProductPrice").text("Giá: " + format(price) + " VNĐ");
 });
 
 function testNull(value){
@@ -36,3 +85,21 @@ function format(num){
         return p<0 || i<p ? ($0+'.') : $0;
     });
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
