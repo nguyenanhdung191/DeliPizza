@@ -98,7 +98,7 @@
 	float: left;
 }
 
-.rightAction img{
+.addToCartButton{
 	height:60px;
 	width:auto;
 	transition: -webkit-transform 0.2s ease;
@@ -110,7 +110,7 @@
 	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
 }
 
-.rightAction img:hover {
+.addToCartButton:hover {
    	-webkit-transform: scale(1.1);
     transform: scale(1.1);
 }

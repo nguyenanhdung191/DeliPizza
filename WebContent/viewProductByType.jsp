@@ -80,11 +80,11 @@
 									    </select>
 									</span>
 								</div>
-								<div class="rightAction"><img name="addToCart" id="<%=p.getProductID()%>-addToCart" title="Thêm vào giỏ hàng" src ="img/addtocart.png" onmouseout="this.src='img/addtocart.png';" onmouseover="this.src='img/addtocarthover.png'"/></div>
+								<div class="rightAction"><img class="addToCartButton" name="addToCart" id="<%=p.getProductID()%>-addToCart" title="Thêm vào giỏ hàng" src ="img/addtocart.png" onmouseout="this.src='img/addtocart.png';" onmouseover="this.src='img/addtocarthover.png'"/></div>
 							</div>
 							<% } else{ %>
 							<div class="productActionContainer">
-								<img name="addToCart" id="<%=p.getProductID()%>-addToCart" style="height:60px; width: auto;" title="Thêm vào giỏ hàng" src ="img/addtocart.png" onmouseout="this.src='img/addtocart.png';" onmouseover="this.src='img/addtocarthover.png'"/>
+								<img class="addToCartButton" name="addToCart" id="<%=p.getProductID()%>-addToCart" style="height:60px; width: auto;" title="Thêm vào giỏ hàng" src ="img/addtocart.png" onmouseout="this.src='img/addtocart.png';" onmouseover="this.src='img/addtocarthover.png'"/>
 							</div>
 							<%}%>
 							<hr class="seperator"/>
