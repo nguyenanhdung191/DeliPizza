@@ -47,11 +47,11 @@
 			</ul>
 		</div>
 		<div class="contentContainer">
-			<div class="darkBackground">
+			<div class="darkBackground">3
 				<div class="productListContainer">
 				<%
 					ArrayList<Product> list = (ArrayList)request.getAttribute("products");
-					for(Product p : list){ %>
+					for(Product p : list){%>
 						<div class="productContainer">
 							<div class="productTypeID" id="<%=p.getProductID()%>-productTypeID"><%=p.getProductTypeID()%></div>
 							<div class="productStartingPrice" id="<%=p.getProductID()%>-startingPrice"><%= p.getProductPrice()%></div>
