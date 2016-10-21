@@ -3,11 +3,12 @@ package Model;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import Common.Constants;
 
 public class ProductDAL extends GeneralDAL{
 
 	public ProductDAL() {
-		super("jdbc:sqlserver://localhost","test","sa","1");
+		super(Constants.dbServer,Constants.dbName, Constants.dbUsername, Constants.dbPassword);
 	}
 	
 	public ArrayList<Product> getProductByType(String productTypeID){
