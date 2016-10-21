@@ -47,7 +47,6 @@
 			</ul>
 		</div>
 		<div class="contentContainer">
-			<div class="ribbonContainer"><img src="img/ribbon.png" /></div>
 			<div class="darkBackground">
 				<div class="productListContainer">
 				<%
