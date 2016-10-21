@@ -12,7 +12,6 @@ public class ProductDAL extends GeneralDAL{
 	}
 	
 	public ArrayList<Product> getProductByType(String productTypeID){
-		
 		String SQLCommand = "SELECT * FROM Product ";
 		SQLCommand += "JOIN ProductType "; 
 		SQLCommand += "ON Product.productTypeID = ProductType.productTypeID ";
