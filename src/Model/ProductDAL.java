@@ -4,8 +4,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-import Object.Product;
-
 public class ProductDAL extends GeneralDAL{
 
 	public ProductDAL() {
