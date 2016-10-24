@@ -25,7 +25,7 @@
         <div class="menubarContainer">
 	        <nav id="nav-3">
 				<a class="link-3" href="index.jsp">TRANG CHỦ</a>
-				<a class="link-3" href="viewMenu.jsp">THỰC ĐƠN</a>
+				<a class="link-3" href="products?productTypeID=1">THỰC ĐƠN</a>
 				<a class="link-3" href="#">HƯỚNG DẪN</a>
 				<a class="link-3" href="#">GIỎ HÀNG</a>
 				<a class="link-3" href="#">GIỚI THIỆU</a>

@@ -6,6 +6,7 @@
 <html>
 <head>
     <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css?family=Mitr:700&amp;subset=latin-ext,thai,vietnamese" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&amp;subset=cyrillic,latin-ext,vietnamese" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:900&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Baloo&amp;subset=devanagari,latin-ext,vietnamese" rel="stylesheet">
@@ -16,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="css/product.css">
     <link rel="stylesheet" type="text/css" href="css/dropdown.css">
     <link rel="stylesheet" type="text/css" href="css/modal.css">
+    <link rel="stylesheet" type="text/css" href="css/viewmenu.css">
     <title>Deli Pizza</title>
 	<style type="text/css">
 	</style>
@@ -29,7 +31,7 @@
          <div class="menubarContainer">
 			<nav id="nav-3">
 				<a class="link-3" href="index.jsp">TRANG CHỦ</a>
-				<a class="link-3" href="viewMenu.jsp">THỰC ĐƠN</a>
+				<a class="link-3" href="products?productTypeID=1">THỰC ĐƠN</a>
 				<a class="link-3" href="#">HƯỚNG DẪN</a>
 				<a class="link-3" href="#">GIỎ HÀNG</a>
 				<a class="link-3" href="#">GIỚI THIỆU</a>
@@ -37,7 +39,35 @@
 			</nav>
 		</div>
 		<div class="contentContainer">
-			<div class="darkBackground">
+				<div class="darkBackground">
+					<div class="menuItemContainer">
+						<a href="products?productTypeID=1">
+						<div class="menuItemIconContainer">
+							<img class="menuItemIcon" src="img/pizzaicon.png" />
+						</div>
+						<div class="menuItemNameContainer">PIZZA</div></a>
+					</div>
+					<div class="menuItemContainer">
+						<a href="products?productTypeID=3">
+						<div class="menuItemIconContainer">
+							<img class="menuItemIcon" src="img/risottoicon.png" />
+						</div>
+						<div class="menuItemNameContainer">CƠM Ý</div></a>
+					</div>
+					<div class="menuItemContainer">
+						<a href="products?productTypeID=2">
+						<div class="menuItemIconContainer">
+							<img class="menuItemIcon" src="img/pastaicon.png" />
+						</div>
+						<div class="menuItemNameContainer">MÌ Ý</div></a>
+					</div>
+					<div class="menuItemContainer">
+						<a href="products?productTypeID=4">
+						<div class="menuItemIconContainer">
+							<img class="menuItemIcon" src="img/drinkicon.png" />
+						</div>
+						<div class="menuItemNameContainer">THỨC UỐNG</div></a>
+					</div>
 				<div class="productListContainer">
 				<%
 					ArrayList<Product> list = (ArrayList)request.getAttribute("products");
