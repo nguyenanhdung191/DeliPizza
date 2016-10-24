@@ -12,12 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/home.css">
     <link rel="stylesheet" type="text/css" href="css/navigation.css">
-    <link rel="stylesheet" type="text/css" href="css/homeContent.css">
-    <link rel="stylesheet" type="text/css" href="css/product.css">
-    <link rel="stylesheet" type="text/css" href="css/dropdown.css">
-    <link rel="stylesheet" type="text/css" href="css/modal.css">
-    <link href="css/js-image-slider.css" rel="stylesheet" type="text/css" />
-    <script src="script/js-image-slider.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/viewmenu.css">
     <title>Deli Pizza</title>
 	<style type="text/css">
 	</style>
@@ -40,7 +35,21 @@
 		</div>
 		<div class="contentContainer">
 			<div class="darkBackground">
-			
+				<div class="menuItemContainer">
+				
+				</div>
+				<div class="menuItemContainer">
+				
+				</div>
+				<div class="menuItemContainer">
+				
+				</div>
+				<div class="menuItemContainer">
+				
+				</div>
+				<div class="menuItemContainer">
+				
+				</div>
 			</div>
 		</div>
 	</div>

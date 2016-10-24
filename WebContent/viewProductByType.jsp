@@ -16,8 +16,6 @@
     <link rel="stylesheet" type="text/css" href="css/product.css">
     <link rel="stylesheet" type="text/css" href="css/dropdown.css">
     <link rel="stylesheet" type="text/css" href="css/modal.css">
-    <link href="css/js-image-slider.css" rel="stylesheet" type="text/css" />
-    <script src="script/js-image-slider.js" type="text/javascript"></script>
     <title>Deli Pizza</title>
 	<style type="text/css">
 	</style>
