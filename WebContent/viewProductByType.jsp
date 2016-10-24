@@ -29,25 +29,17 @@
     		<div class="sloganContainer"><img src="img/delivery.png" /></div>
     	</div>
          <div class="menubarContainer">
-			<ul class="nav">
-				<li><a href="index.jsp">TRANG CHỦ</a></li>
-				<li>
-					<a href="#">THỰC ĐƠN</a>
-					<ul>
-						<li><a href="ViewProductByType?productTypeID=1">PIZZA</a></li>
-						<li><a href="ViewProductByType?productTypeID=2">MÌ Ý</a></li>
-						<li><a href="ViewProductByType?productTypeID=3">CƠM</a></li>
-		                <li><a href="ViewProductByType?productTypeID=4">THỨC UỐNG</a></li>
-					</ul>
-				</li>
-				<li><a href="#">HƯỚNG DẪN</a></li>
-				<li><a href="#">GIỎ HÀNG</a></li>
-				<li><a href="#">GIỚI THIỆU</a></li>
-		        <li><a href="#">CỬA HÀNG</a></li>       
-			</ul>
+			<nav id="nav-3">
+				<a class="link-3" href="#">TRANG CHỦ</a>
+				<a class="link-3" href="#">THỰC ĐƠN</a>
+				<a class="link-3" href="#">HƯỚNG DẪN</a>
+				<a class="link-3" href="#">GIỎ HÀNG</a>
+				<a class="link-3" href="#">GIỚI THIỆU</a>
+				<a class="link-3" href="#">CỬA HÀNG</a>
+			</nav>
 		</div>
 		<div class="contentContainer">
-			<div class="darkBackground">3
+			<div class="darkBackground">
 				<div class="productListContainer">
 				<%
 					ArrayList<Product> list = (ArrayList)request.getAttribute("products");
