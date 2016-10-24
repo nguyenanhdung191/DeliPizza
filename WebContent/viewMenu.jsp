@@ -44,14 +44,14 @@
 					<div class="menuItemNameContainer">PIZZA</div></a>
 				</div>
 				<div class="menuItemContainer">
-					<a href="products?productTypeID=2">
+					<a href="products?productTypeID=3">
 					<div class="menuItemIconContainer">
 						<img class="menuItemIcon" src="img/risottoicon.png" />
 					</div>
 					<div class="menuItemNameContainer">CƠM Ý</div></a>
 				</div>
 				<div class="menuItemContainer">
-					<a href="products?productTypeID=3">
+					<a href="products?productTypeID=2">
 					<div class="menuItemIconContainer">
 						<img class="menuItemIcon" src="img/pastaicon.png" />
 					</div>
