@@ -25,10 +25,37 @@
 	overflow: hidden;     
 }
 
-menuItemIconContainer{
+.menuItemIconContainer{
 	float:left;
+	width: 125px;
+	height:100%;
 }
 
-menuItemNameContainer{
+.menuItemIcon{
+	width:auto;
+	height:100%;
+}
+
+.menuItemNameContainer{
+	line-height:125px;
+	width:225px;
 	float:left;
+	text-align:center;
+	font-family: 'Mitr', sans-serif;
+	font-size:35px;
+}
+
+.menuItemContainer:hover{
+	background: #91CCFF;  
+	color:#CF0000;
+}
+
+.menuItemContainer a { 
+	color:black; 
+	-webkit-transition: color 0.5s;
+	transition: color 0.5s;
+}
+
+a:hover { 
+	color:#CF0000;
 }
